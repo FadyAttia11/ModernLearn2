@@ -3,7 +3,9 @@ import './App.css'
 import Toolbar from './components/Toolbar/Toolbar.js'
 import SideDrawer from './components/SideDrawer/SideDrawer.js';
 import Backdrop from './components/Backdrop/Backdrop.js';
-import studyingGirl from './assets/img/studyingGirl.jpg'
+import MainScreenInfo from './components/MainScreenInfo/MainScreenInfo.js';
+import Footer from './components/Footer/Footer.js';
+import studyingGirl from './assets/img/studyingGirl2.jpg'
 
 class App extends React.Component{
   state = {
@@ -31,16 +33,26 @@ class App extends React.Component{
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
+
         <main style={{marginTop: '64px'}}>
-        <div className="fortxt">
-          <center><h1>Join us Now for better<br />and modern way of learning</h1></center>
-        </div>
-        <button className="button">Get Started</button>
-          <div className="mainphoto">
-            <img src={studyingGirl} alt="main photo of girl studying" />
+          <div className="flex-container">
+            <div className="text-container">
+              <center><h1>انضم الينا الان<br />لتجربة طريقة افضل للتعلم</h1></center>
+              <button className="button">ابدأ الأن</button>
+            </div>
+
+            <div className="photo-container">
+              <img src={studyingGirl} alt="main photo of girl studying" />
+            </div>
           </div>
+
+          <MainScreenInfo />
         </main>
+
+        <Footer />
+
       </div>
+      
     );
   }
 }

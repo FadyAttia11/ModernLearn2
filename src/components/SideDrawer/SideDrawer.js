@@ -9,8 +9,8 @@ const sideDrawer = props => {
     return(
         <nav className={DrawerClasses}>
             <ul>
-                <li><a href="/">Sign In</a></li>
-                <li><a href="/">Sign Up</a></li>
+                <li><a href="/">تسجيل الدخول</a></li>
+                <li><a href="/">انشاء حساب جديد</a></li>
             </ul>
         </nav>
     )
