@@ -23,6 +23,8 @@
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
+    font-family: customArabic;
+    font-size: 1.8rem;
 }
 
 .spacer {
@@ -43,6 +45,8 @@
 .toolbar_navigation-items a {
     color: white;
     text-decoration: none;
+    font-family: customArabic;
+    font-size: 1.1rem;
 }
 
 .toolbar_navigation-items a:hover,

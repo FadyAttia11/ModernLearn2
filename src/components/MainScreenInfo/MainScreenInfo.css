@@ -1,7 +1,7 @@
 .card-container {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 60px;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -14,7 +14,7 @@
 
 .card-container p {
     color: #813D36;
-    font-weight: 500;
+    font-family: customArabic;
 }
 
 .card-button {

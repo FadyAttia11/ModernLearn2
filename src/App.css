@@ -1,3 +1,29 @@
+@font-face {
+    src: url(assets/fonts/MarkaziText-VariableFont_wght.ttf);
+    font-family: customArabic;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(assets/fonts/Cairo-Regular.ttf);
+    font-family: Cairo-Regular;
+}
+
+@font-face {
+    src: url(assets/fonts/Cairo-SemiBold.ttf);
+    font-family: Cairo-semibold;
+}
+
+@font-face {
+    src: url(assets/fonts/Cairo-Bold.ttf);
+    font-family: Cairo-bold;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
 .container {
     /*position: fixed;*/
     background-color: #F1E2DD;
@@ -8,14 +34,9 @@
     z-index: 10;
 }
 
-@media(min-width:768px){
-    .flex-container {
-        display: flex;
-        align-items: center;
-    }
-}
-
 .flex-container{
+    display: flex;
+    align-items: center;
     min-height: 100%;
 }
 
@@ -41,17 +62,20 @@
     justify-content: center;
 }
 
-h1 {
+.text-container h1 {
     color: #813D36;
+    font-family: customArabic;
+    font-size: 2.3rem;    
 }
 
 .button {
     background-color: #2C8F30;
     border: none;
     color: white;
-    padding: 18px 35px;
-    font-size: 20px;
+    padding: 15px 35px;
+    font-size: 22px;
     font-weight: 700;
+    font-family: customArabic;
     text-decoration: none;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -63,6 +87,11 @@ h1 {
 }
 
 @media (max-width: 767px){
+    .flex-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .photo-container{
         /*background-color:white;
         display: inline-block;

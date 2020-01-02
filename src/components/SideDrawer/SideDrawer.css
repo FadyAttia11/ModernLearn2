@@ -29,9 +29,10 @@
 }
 
 .side-drawer a {
-    color: #960085;
+    color: #813D36;
     text-decoration: none;
     font-size: 1.2rem;
+    font-family: customArabic;
 }
 
 .side-drawer a:hover,

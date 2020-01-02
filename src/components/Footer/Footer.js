@@ -5,10 +5,30 @@ const footer = props => (
     <div className="footer">
         <div className="footer-content">
             <div className="footer-section contact-form">
+                <h2>تواصل معنا</h2>
+                <br />
+                <form action="index.html" method="post">
+                    <input type="email" name="email" className="text-input contact-input" placeholder="بريدك الالكتروني" />
+                    <textarea name="message" className="text-input contact-input" placeholder="اكتب رسالتك"></textarea>
+                    <button type="submit">
+                        <i className="fas fa-envlope"></i>
+                        ارسال
+                    </button>
+                </form>
             </div>
-            <div className="footer-section links"></div>
+            <div className="footer-section links">
+                <h2>وصلات سريعة</h2>
+                <br />
+                <ul>
+                    <a href="#"><li>الاحداث</li></a>
+                    <a href="#"><li>فريق العمل</li></a>
+                    <a href="#"><li>جميع الامتحانات</li></a>
+                    <a href="#"><li>المعرض</li></a>
+                    <a href="#"><li>الشروط والاحكام</li></a>
+                </ul>
+            </div>
             <div className="footer-section about">
-                <h1 className="logo-text">امتحانات اونلاين</h1>
+                <h2 className="logo-text">امتحانات اونلاين</h2>
                 <p>امتحانات اونلاين هو موقع يتيح لك كطالب الاجابة على الامتحانات المتاحة على المواقع بواسطة اساتذتك ويتيح لك كمدرس وضع الامتحانات واختبار طلابك ولك كولي امر متابعه درجات ابنك فى الامتحانات</p>
                 <div className="contact">
                     <span><i className="fas fa-phone"></i>&nbsp; 0122-956-5721</span>
